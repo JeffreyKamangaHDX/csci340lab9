@@ -23,11 +23,6 @@ namespace ContosoUniversity.Pages.Students
             Configuration = configuration;
         }
 
-    public IndexModel(SchoolContext context)
-    {
-        _context = context;
-    }
-
     public string NameSort { get; set; }
     public string DateSort { get; set; }
     public string CurrentFilter { get; set; }
