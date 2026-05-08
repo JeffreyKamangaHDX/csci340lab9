@@ -22,6 +22,7 @@ namespace ContosoUniversity.Models
         [Display(Name = "Enrollment Date")]
         public DateTime EnrollmentDate { get; set; }
         [Display(Name = "Full Name")]
+        
         public string FullName
         {
             get
@@ -29,6 +30,9 @@ namespace ContosoUniversity.Models
                 return LastName + ", " + FirstMidName;
             }
         }
+
+        [Display(Name = "Age")]
+        public int Age { get; set; }
 
         public ICollection<Enrollment> Enrollments { get; set; }
     }
